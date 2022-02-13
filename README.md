@@ -1,29 +1,29 @@
 
-# Configurando o Kafka
+# Setting Up Using Docker
 
-## Subindo o Kafka
+## Start Kafka Server
 
-Executar o docker-compose
+Run docker-compose
 
 ```bash
   docker-compose up -d
 ```
 
-## Novo tópico
+## New Topic
 
-Acessar o container
+Access the container
 
 ```bash
   docker exec -it kakfa /bin/sh
 ```
 
-Navegar no diretório do container
+Navigate the container directory
 
 ```bash
   cd /opt/bitnami/kafka/bin
 ```
 
-Criar um tópico
+Create a topic
 
 ```bash
   kafka-topics.sh --create --bootstrap-server localhost:9092 --topic example
